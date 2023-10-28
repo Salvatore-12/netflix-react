@@ -6,6 +6,7 @@ import MyHeader from './components/MyHeader';
 import MyGallery from './components/MyGallery';
 import MyGallery2 from './components/myGallery2';
 import MyGallery3 from './components/MyGallery3';
+import MyFooter from './components/MyFooter';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <MyGallery/>
       <MyGallery2/>
       <MyGallery3/>
+      <MyFooter/>
     </div>
   );
 }

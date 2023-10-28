@@ -36,9 +36,11 @@ componentDidMount() {
           <p>C'è stato un errore durante il recupero dei dati.</p>
         ) : (
           <div>
-            <h1>Film di Harry Potter:</h1>
-            <Row>
+            
+            <Row className="mx-3">
+                <h3 className="text-white my-2">Harry Potter</h3>
               {this.state.movie.map(movie => (
+              
                 <SingleCard key={movie.imdbID} title={movie.Title} poster={movie.Poster} />
               ))}
             </Row>
