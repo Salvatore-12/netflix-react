@@ -9,7 +9,7 @@ class MyGallery2 extends Component{
     isErrror:false,
 }  
 componentDidMount() {
-    fetch('http://www.omdbapi.com/?apikey=a861c87&s=the witcher')
+    fetch('http://www.omdbapi.com/?apikey=a861c87&s=star trek')
       .then(response => {
         if (response.ok) {
           return response.json();
@@ -38,7 +38,7 @@ componentDidMount() {
           <div>
             <h1>SHOW TV:</h1>
             <Row className="mx-3">
-            <h3 className="text-white my-3">The Witcher</h3>
+            <h3 className="text-white my-3">Star Trek</h3>
               {this.state.movie.map(movie => (
                 <SingleCard key={movie.imdbID} title={movie.Title} poster={movie.Poster} />
               ))}

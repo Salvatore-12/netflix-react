@@ -2,7 +2,7 @@
 import {Container,NavDropdown,Nav,} from 'react-bootstrap'
 const MyHeader=()=>{
 return( 
-<div fluix className='d-flex justify-content-between mt-2'>
+<div fluid className='d-flex justify-content-between mt-2'>
 <Container className="d-flex my-0 justify-content-between ms-3">
 
   <div className='d-flex ms-0'>
