@@ -1,6 +1,7 @@
 import Container from 'react-bootstrap/Container'
 import Navbar from 'react-bootstrap/Navbar'
 import Nav from 'react-bootstrap/Nav'
+import { Link } from 'react-router-dom'
 
 
 const MyNavbar = () => {
@@ -13,11 +14,11 @@ const MyNavbar = () => {
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto fs-5 fw-bold ms-3">
-            <Nav.Link href="#" className='text-white'>Home</Nav.Link>
-            <Nav.Link href="#" className='text-secondary'>Tv Shows</Nav.Link>
-            <Nav.Link href="#" className='text-secondary'>Movies</Nav.Link>
-            <Nav.Link href="#" className='text-secondary'>Recently Added</Nav.Link>
-            <Nav.Link href="#" className='text-secondary'>My List</Nav.Link>
+          <Link to='/' className='text-white'>Home</Link>
+            <Link to='/tvshow' className='text-secondary'>Tv Shows</Link>
+            <Link to='/'  className='text-secondary'>Movies</Link>
+            <Link to='/' className='text-secondary'>Recently Added</Link>
+            <Link to='/' className='text-secondary'>My List</Link>
           </Nav>
           <Nav className='fs-4 mt-1 me-2 fw-bold'>
           <Nav.Link href="#"><i class="bi bi-search text-white"></i></Nav.Link>

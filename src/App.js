@@ -7,16 +7,25 @@ import MyGallery from './components/MyGallery';
 import MyGallery2 from './components/myGallery2';
 import MyGallery3 from './components/MyGallery3';
 import MyFooter from './components/MyFooter';
+import TvShow from './components/TvShow';
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
 
 function App() {
   return (
     <div className='bg-dark'>
-      <MyNavbar />
-      <MyHeader classname="bg-white" />
-      <MyGallery/>
-      <MyGallery2/>
-      <MyGallery3/>
-      <MyFooter/>
+      <BrowserRouter>
+        <MyNavbar />
+        <Routes>
+          <Route path='/MyHeader' element={<TvShow />}  ></Route>
+          <Route element={<TvShow />} path='/tvshow'>
+          </Route>
+        </Routes>
+        <MyHeader classname="bg-white" />
+        <MyGallery />
+        <MyGallery2 />
+        <MyGallery3 />
+      </BrowserRouter>
+      <MyFooter />
     </div>
   );
 }
