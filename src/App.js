@@ -2,7 +2,7 @@
 import './App.css';
 import MyNavbar from './components/MyNavbar';
 import 'bootstrap/dist/css/bootstrap.min.css'
-import MyHeader from './components/MyHeader';
+
 
 import MyFooter from './components/MyFooter';
 import TvShow from './components/TvShow';
