@@ -36,7 +36,7 @@ componentDidMount() {
           <p>C'è stato un errore durante il recupero dei dati.</p>
         ) : (
           <div>
-            <h1>SHOW TV:</h1>
+            
             <Row className="mx-3">
             <h3 className="text-white my-3">Star Trek</h3>
               {this.state.movie.map(movie => (

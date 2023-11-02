@@ -8,17 +8,19 @@ const MyNavbar = () => {
  
   return (
     <Navbar collapseOnSelect expand="lg">
+        
       <Container fluid className='mt-1'>
       <img src="../assets/logo.png" alt="logo" style={{ width: "120px" }} />
-       
+      
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
-          <Nav className="me-auto fs-5 fw-bold ms-3">
-          <Link to='/' className='text-white'>Home</Link>
-            <Link to='/tvshow' className='text-secondary'>Tv Shows</Link>
-            <Link to='/'  className='text-secondary'>Movies</Link>
-            <Link to='/' className='text-secondary'>Recently Added</Link>
-            <Link to='/' className='text-secondary'>My List</Link>
+      
+          <Nav className="me-auto fs-5 fw-bold ms-3 text-secondary ms-2 ">
+            <Link to='/' className='nav-link text-white'>Home</Link>
+            <Link to='/tvshow' className='nav-link text-secondary ms-2'>Tv Shows</Link>
+            <Link to='/'  className='nav-link text-secondary ms-2'>Movies</Link>
+            <Link to='/' className='nav-link text-secondary ms-2'>Recently Added</Link>
+            <Link to='/' className='nav-link text-secondary ms-2'>My List</Link>
           </Nav>
           <Nav className='fs-4 mt-1 me-2 fw-bold'>
           <Nav.Link href="#"><i class="bi bi-search text-white"></i></Nav.Link>
