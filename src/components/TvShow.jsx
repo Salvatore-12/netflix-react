@@ -1,9 +1,14 @@
+import MyGallery from "./MyGallery"
+import MyGallery3 from "./MyGallery3"
+import MyGallery2 from "./myGallery2"
 
 
 const TvShow=()=>{
 return(
     <div className="text-white">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas excepturi perspiciatis quam vel laborum sint suscipit, eum dolor voluptas est officiis maiores fugit odio, maxime blanditiis? Tempore voluptates quisquam atque!</p>
+         <MyGallery/>
+        <MyGallery2/>
+        <MyGallery3/>
     </div>
     )
 }

@@ -2,8 +2,6 @@
 import './App.css';
 import MyNavbar from './components/MyNavbar';
 import 'bootstrap/dist/css/bootstrap.min.css'
-
-
 import MyFooter from './components/MyFooter';
 import TvShow from './components/TvShow';
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
@@ -15,7 +13,7 @@ function App() {
       <BrowserRouter>
         <MyNavbar />
         <Routes>
-          <Route element={<MyHome/>}  path='/'  ></Route>
+          <Route element={<MyHome/>}  path='/'></Route>
           <Route element={<TvShow/>} path='/tvshow'>
           </Route>
         </Routes>
